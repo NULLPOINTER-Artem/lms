@@ -1,0 +1,24 @@
+# HOW TO USE:
+# 1. Download latest nginx.tmpl (save next to this docker-compose file):
+#    curl https://raw.githubusercontent.com/nginx-proxy/nginx-proxy/main/nginx.tmpl > ./nginx.tmpl
+# 2. Run docker-compose: docker-compose -f ./docker-compose-w-le-basic.yml -f ./docker-compose-w-le-prod.yml up -d
+
+# Based on: https://github.com/buchdag/letsencrypt-nginx-proxy-companion-compose
+
+version: '3.5'
+services:
+  lms-vite-nginx:
+    restart: always
+    image: nginx
+    container_name: lms-vite-nginx-container
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ../dist:/usr/share/nginx/html:ro
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/prod/conf.d:/etc/nginx/conf.d
+    environment:
+      - VIRTUAL_HOST=lms.ryzum.com
+      - VIRTUAL_PORT=443
+      - SSL_POLICY=Mozilla-Modern
+      - LETSENCRYPT_HOST=lms.ryzum.com
+      - LETSENCRYPT_EMAIL=admin@ryzum.com

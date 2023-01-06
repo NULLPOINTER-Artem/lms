@@ -1,0 +1,47 @@
+{
+  "name": "@tourbase/learning-management-system",
+  "repository": "git://github.com/tourbase/learning-management-system.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "private": false,
+  "version": "0.0.11",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "@tinymce/tinymce-vue": "^5.0.0",
+    "@urql/exchange-multipart-fetch": "^0.1.14",
+    "@urql/exchange-retry": "^1.0.0",
+    "@urql/vue": "^0.6.1",
+    "axios": "^0.26.1",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1",
+    "graphql": "^16.3.0",
+    "pinia": "^2.0.13",
+    "vue": "^3.2.32",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@urql/devtools": "^2.0.3",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.6.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0",
+    "unplugin-vue-components": "^0.19.2",
+    "vite": "^2.9.1",
+    "vite-plugin-eslint": "^1.4.0",
+    "vite-plugin-linter": "^1.2.0",
+    "vite-plugin-pwa": "^0.11.13",
+    "vitest": "^0.9.3"
+  }
+}

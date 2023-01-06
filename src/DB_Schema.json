@@ -1,0 +1,865 @@
+[
+  {
+    "api_name": "entry_type__questions",
+    "name": [
+      {
+        "locale": "en",
+        "text_value": "Questions"
+      }
+    ],
+    "elements": [
+      {
+        "api_name": "element__correct_answers__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Correct Answers"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "MultiLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__question_answers__entry",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Question Answers"
+          }
+        ],
+        "element_type": "Entry",
+        "attributes": {
+          "__typename": "ElementAttrsEntry",
+          "models": [
+            {
+              "api_name": "entry_type__question_answers"
+            }
+          ],
+          "quantity_limit_min": 0,
+          "quantity_limit_max": 0,
+          "optional": true
+        }
+      },
+      {
+        "api_name": "element__variants_of_answers__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Variants of Answers"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "MultiLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "api_name": "entry_type__categories",
+    "name": [
+      {
+        "locale": "en",
+        "text_value": "Categories"
+      }
+    ],
+    "elements": []
+  },
+  {
+    "api_name": "entry_type__courses",
+    "name": [
+      {
+        "locale": "en",
+        "text_value": "Courses"
+      }
+    ],
+    "elements": [
+      {
+        "api_name": "element__course_description__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Course Description"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "MultiLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__course_role_id__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Course Role Id"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "SingleLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__course_banner__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Course Banner"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "MultiLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__sections__entry",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Sections"
+          }
+        ],
+        "element_type": "Entry",
+        "attributes": {
+          "__typename": "ElementAttrsEntry",
+          "models": [
+            {
+              "api_name": "entry_type__sections"
+            }
+          ],
+          "quantity_limit_min": 0,
+          "quantity_limit_max": 0,
+          "optional": true
+        }
+      },
+      {
+        "api_name": "element__course_order__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Course Order"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "SingleLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__course_duration__number",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Course Duration"
+          }
+        ],
+        "element_type": "Number",
+        "attributes": {
+          "__typename": "ElementAttrsNumber",
+          "req_int": false,
+          "optional": true
+        }
+      },
+      {
+        "api_name": "element__course_banner_name__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Course Banner Name"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "SingleLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "api_name": "entry_type__quizzes",
+    "name": [
+      {
+        "locale": "en",
+        "text_value": "Quizzes"
+      }
+    ],
+    "elements": [
+      {
+        "api_name": "element__questions__entry",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Questions"
+          }
+        ],
+        "element_type": "Entry",
+        "attributes": {
+          "__typename": "ElementAttrsEntry",
+          "models": [
+            {
+              "api_name": "entry_type__questions"
+            }
+          ],
+          "quantity_limit_min": 0,
+          "quantity_limit_max": 0,
+          "optional": true
+        }
+      }
+    ]
+  },
+  {
+    "api_name": "entry_type__question_answers",
+    "name": [
+      {
+        "locale": "en",
+        "text_value": "Question Answers"
+      }
+    ],
+    "elements": [
+      {
+        "api_name": "element__user_answers__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "User Answers"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "MultiLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__user__user",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "User"
+          }
+        ],
+        "element_type": "User",
+        "attributes": {
+          "__typename": "ElementAttrsUser",
+          "quantity_limit_min": 0,
+          "quantity_limit_max": 0,
+          "optional": false,
+          "roles": [
+            {
+              "id": "124500f4-f083-4389-a1bb-66a821f497d1",
+              "name": [
+                {
+                  "locale": "en-US",
+                  "text_value": "editor"
+                }
+              ]
+            },
+            {
+              "id": "1b616bee-607f-4e6d-b1d0-f7b16ab0abd6",
+              "name": [
+                {
+                  "locale": "en-US",
+                  "text_value": "superuser"
+                }
+              ]
+            },
+            {
+              "id": "1fc960ad-9d2b-4b77-ac1a-e88a053d3072",
+              "name": [
+                {
+                  "locale": "en-US",
+                  "text_value": "base"
+                }
+              ]
+            },
+            {
+              "id": "48066526-d9fa-4a7f-8409-79613b6f30aa",
+              "name": [
+                {
+                  "locale": "en-US",
+                  "text_value": "read-only"
+                }
+              ]
+            },
+            {
+              "id": "f2210aad-1858-4091-8527-97bc18e4875b",
+              "name": [
+                {
+                  "locale": "en-US",
+                  "text_value": "HR"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__is_correct__boolean",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Is Correct"
+          }
+        ],
+        "element_type": "Boolean",
+        "attributes": {
+          "__typename": "ElementAttrsBoolean",
+          "default_value": false
+        }
+      }
+    ]
+  },
+  {
+    "api_name": "entry_type__lesson_pages",
+    "name": [
+      {
+        "locale": "en",
+        "text_value": "Lesson Pages"
+      }
+    ],
+    "elements": [
+      {
+        "api_name": "element__page_order__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Page Order"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "SingleLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__page_banner__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Page Banner"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "MultiLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__html_content__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "HTML Content"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "HTML",
+          "text_format": "text_html",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__quizzes__entry",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Quizzes"
+          }
+        ],
+        "element_type": "Entry",
+        "attributes": {
+          "__typename": "ElementAttrsEntry",
+          "models": [
+            {
+              "api_name": "entry_type__quizzes"
+            }
+          ],
+          "quantity_limit_min": 0,
+          "quantity_limit_max": 0,
+          "optional": true
+        }
+      }
+    ]
+  },
+  {
+    "api_name": "entry_type__learning_paths",
+    "name": [
+      {
+        "locale": "en",
+        "text_value": "Learning Paths"
+      }
+    ],
+    "elements": [
+      {
+        "api_name": "element__courses__entry",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Courses"
+          }
+        ],
+        "element_type": "Entry",
+        "attributes": {
+          "__typename": "ElementAttrsEntry",
+          "models": [
+            {
+              "api_name": "entry_type__courses"
+            }
+          ],
+          "quantity_limit_min": 0,
+          "quantity_limit_max": 0,
+          "optional": true
+        }
+      },
+      {
+        "api_name": "element__lp_description__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Learning Path Description"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "MultiLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "api_name": "entry_type__lessons",
+    "name": [
+      {
+        "locale": "en",
+        "text_value": "Lessons"
+      }
+    ],
+    "elements": [
+      {
+        "api_name": "element__lesson_pages__entry",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Lesson Pages"
+          }
+        ],
+        "element_type": "Entry",
+        "attributes": {
+          "__typename": "ElementAttrsEntry",
+          "models": [
+            {
+              "api_name": "entry_type__lesson_pages"
+            }
+          ],
+          "quantity_limit_min": 0,
+          "quantity_limit_max": 0,
+          "optional": true
+        }
+      },
+      {
+        "api_name": "element__lesson_description__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Lesson Description"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "MultiLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__lesson_categories__entry",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Lesson Categories"
+          }
+        ],
+        "element_type": "Entry",
+        "attributes": {
+          "__typename": "ElementAttrsEntry",
+          "models": [
+            {
+              "api_name": "entry_type__categories"
+            }
+          ],
+          "quantity_limit_min": 0,
+          "quantity_limit_max": 0,
+          "optional": true
+        }
+      },
+      {
+        "api_name": "element__lesson_order__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Lesson Order"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "SingleLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "api_name": "entry_type__user_progress",
+    "name": [
+      {
+        "locale": "en",
+        "text_value": "User Progress"
+      }
+    ],
+    "elements": [
+      {
+        "api_name": "element__progress_percent__number",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Progress Percent"
+          }
+        ],
+        "element_type": "Number",
+        "attributes": {
+          "__typename": "ElementAttrsNumber",
+          "req_int": false,
+          "optional": true
+        }
+      },
+      {
+        "api_name": "element__user__user",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "User"
+          }
+        ],
+        "element_type": "User",
+        "attributes": {
+          "__typename": "ElementAttrsUser",
+          "quantity_limit_min": 0,
+          "quantity_limit_max": 0,
+          "optional": false,
+          "roles": [
+            {
+              "id": "124500f4-f083-4389-a1bb-66a821f497d1",
+              "name": [
+                {
+                  "locale": "en-US",
+                  "text_value": "editor"
+                }
+              ]
+            },
+            {
+              "id": "1b616bee-607f-4e6d-b1d0-f7b16ab0abd6",
+              "name": [
+                {
+                  "locale": "en-US",
+                  "text_value": "superuser"
+                }
+              ]
+            },
+            {
+              "id": "1fc960ad-9d2b-4b77-ac1a-e88a053d3072",
+              "name": [
+                {
+                  "locale": "en-US",
+                  "text_value": "base"
+                }
+              ]
+            },
+            {
+              "id": "48066526-d9fa-4a7f-8409-79613b6f30aa",
+              "name": [
+                {
+                  "locale": "en-US",
+                  "text_value": "read-only"
+                }
+              ]
+            },
+            {
+              "id": "f2210aad-1858-4091-8527-97bc18e4875b",
+              "name": [
+                {
+                  "locale": "en-US",
+                  "text_value": "HR"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__current_entry_id__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Current Entry Id"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "SingleLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "api_name": "entry_type__sections",
+    "name": [
+      {
+        "locale": "en",
+        "text_value": "Sections"
+      }
+    ],
+    "elements": [
+      {
+        "api_name": "element__section_description__text",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Section Description"
+          }
+        ],
+        "element_type": "Text",
+        "attributes": {
+          "__typename": "ElementAttrsText",
+          "text_editor_type": "MultiLine",
+          "text_format": "text_plain",
+          "character_limit_min": 0,
+          "character_limit_max": 0,
+          "optional": true,
+          "tabs": [
+            {
+              "tab": {
+                "name": "en",
+                "tab_type": "Predefined"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "api_name": "element__lessons__entry",
+        "name": [
+          {
+            "locale": "en",
+            "text_value": "Lessons"
+          }
+        ],
+        "element_type": "Entry",
+        "attributes": {
+          "__typename": "ElementAttrsEntry",
+          "models": [
+            {
+              "api_name": "entry_type__lessons"
+            }
+          ],
+          "quantity_limit_min": 0,
+          "quantity_limit_max": 0,
+          "optional": true
+        }
+      }
+    ]
+  }
+]

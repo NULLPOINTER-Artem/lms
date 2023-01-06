@@ -1,0 +1,12 @@
+.material-list {
+  margin: 0 auto;
+  width: 100%;
+
+  &--no-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #0B243D;
+  }
+}
